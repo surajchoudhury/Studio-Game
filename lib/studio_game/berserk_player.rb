@@ -1,6 +1,6 @@
-require_relative "player"
+require "studio_game/player"
 
-class BerserkPlayer < Player
+class BerserkPlayer < StudioGame::Player
   def initialize(name, health=100)
     super(name, health)
     @w00t_count = 0

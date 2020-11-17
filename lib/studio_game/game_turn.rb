@@ -1,6 +1,6 @@
-require_relative "die"
-require_relative 'treasure_trove'
-require_relative 'loaded_die'
+require "studio_game/die"
+require 'studio_game/treasure_trove'
+require 'studio_game/loaded_die'
 
 module GameTurn
   def self.take_turn(player)
@@ -13,7 +13,7 @@ module GameTurn
     else
       player.w00t
     end
-    treasure = TreasureTrove.random
+    treasure = StudioGame::TreasureTrove.random
     player.found_treasure(treasure)
   end
 end

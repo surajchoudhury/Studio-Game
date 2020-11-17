@@ -1,4 +1,4 @@
-require_relative 'auditable'
+require 'studio_game/auditable'
 
 class Die
   include Auditable
