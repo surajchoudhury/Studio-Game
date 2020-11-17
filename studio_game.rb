@@ -20,10 +20,4 @@ loop do
   end
 end
 
-klutz = ClumsyPlayer.new("klutz", 105)
-knuckleheads.add_player(klutz)
-
-berserker = BerserkPlayer.new("berserker", 50)
-knuckleheads.add_player(berserker)
-
 knuckleheads.save_high_scores
