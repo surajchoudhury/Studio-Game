@@ -12,8 +12,4 @@ module Playable
   def strong? 
     @health > 100
   end
-
-  def <=>(player)
-    player.score <=> score
-  end
 end
